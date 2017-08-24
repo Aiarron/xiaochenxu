@@ -1,0 +1,163 @@
+/* me.wxss */
+page{
+  background-color: #f1f1f1;
+}
+.header{
+  width: 100%;
+  height: 300rpx;
+  background: url(/images/icon/me/bg_mycenter.png) no-repeat center;
+  background-size: 100%;
+}
+.header .header-info{
+  width: 90%;
+  padding: 0 5%;
+  display: flex;
+  display: -webkit-flex;
+  padding-top: 120rpx;
+  height:120rpx;
+}
+.header .header-info .header-info-box{
+  width: 90%;
+  display: inline-block;
+}
+.header .header-info .header-info-box image{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.header .header-info .header-info-box .header-login-btn,.header .header-info .header-info-box .header-info-name{
+  height: 50rpx;
+  line-height: 50rpx;
+  margin-left: 20rpx;
+  font-size: 26rpx;
+  color: #fff;
+  display: inline-block;
+}
+.header .header-info .header-info-box .header-login-btn{
+  width: 150rpx;
+  border:1px solid #fff;
+  text-align: center;
+  border-radius: 8rpx;
+  -webkit-border-radius: 8rpx;
+}
+.header .header-info .header-arrow-icon {
+  width: 10%;
+  display: inline-block;
+  vertical-align: middle;
+  height:120rpx;
+  line-height:120rpx;
+}
+.arricon{
+  width: 30rpx;
+  height: 30rpx;
+  background: url(/images/icon/me/next.png) no-repeat;
+  background-size: cover;
+}
+.icon-white{
+  background: url(/images/icon/me/next_white.png) no-repeat;
+  background-size: cover;
+}
+.all-order,.about-me{
+  width: 100%;
+  margin-top:20rpx;
+  background: #fff;
+}
+.all-order .check-order{
+  height: 80rpx;
+  width: 90%;
+  padding: 0 5%;
+  border-bottom: 1rpx solid #f1f1f1;
+}
+.all-order .check-order  {
+  /* width: 100%; */
+  display: flex;
+  display: -webkit-flex;
+  line-height: 80rpx;
+}
+.all-order .check-order   view{
+  flex: 1;
+  font-size: 28rpx;
+}
+.all-order .check-order .check-name{
+  color: #333;
+}
+.all-order .check-order .check-tick{
+  color: #999;
+  text-align: right;
+  vertical-align: middle;
+}
+.all-order .check-order .check-tick icon{
+  vertical-align: middle;
+  margin-left: 10rpx;
+  margin-top:-4rpx;
+}
+.all-order .check-item{
+  width: 90%;
+  padding: 0 5%;
+  border-bottom: 1rpx solid #f1f1f1;
+  height: 134rpx;
+  background: #fff;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+}
+.all-order .check-item .check-list{
+  flex: 1;
+  text-align: center;
+}
+.all-order .check-item .check-list navigator{
+  display: block;
+  text-align: center;
+  padding-top: 30rpx;
+}
+.all-order .check-item .check-list .cicon{
+  width: 44rpx;
+  height: 44rpx;
+  background-size: cover !important;
+  display: block;
+  margin: 0 auto;
+}
+.all-order .check-item .check-list .icon1{
+  background: url(/images/icon/me/waitorder.png) no-repeat center;
+}
+.all-order .check-item .check-list .icon2{
+  background: url(/images/icon/me/waitdestribution.png) no-repeat center;
+}
+.all-order .check-item .check-list .icon3{
+  background: url(/images/icon/me/destributed.png) no-repeat center;
+}
+.all-order .check-item .check-list .icon4{
+  background: url(/images/icon/me/completed.png) no-repeat center;
+}
+.all-order .check-item .check-list text{
+  font-size: 26rpx;
+  color: #333;
+}
+.col-9{
+  width: 90%;
+}
+.col-1{
+  width: 10%;
+}
+.col-5{
+  width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

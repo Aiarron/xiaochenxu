@@ -1,0 +1,27 @@
+<!--register.wxml-->
+<view class="container">
+  <form bindsubmit="onRegister">
+    <view class="row">
+      <view class="row-name">手机号码：</view>
+      <input type="number" name="mobile" id="mobile" placeholder="请输入11位手机号" bindinput="inputMobile" />
+    </view>
+    <view class="row">
+      <view class="row-name">验证码：</view>
+      <input type="number" name="code" placeholder="输入短信验证码" class="row-code" />
+      <button type="primary" class="getcode" bindtap="getCode">获取验证码</button>
+    </view>
+    <view class="row">
+      <view class="row-name">密码：</view>
+      <input type="password" name="password" placeholder="请输入密码" />
+    </view>
+    <view class="row no-bd">
+      <button type="primary" form-type="submit">登陆</button>
+    </view>
+  </form>
+  <view class="other-option ">
+    <view class="login">
+      <navigator url="/pages/login/login" open-type="navigateTo">登录</navigator>
+    </view>
+  </view>
+</view>
+

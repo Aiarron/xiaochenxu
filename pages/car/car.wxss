@@ -1,0 +1,14 @@
+/* car.wxss */
+.connect-server{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 20rpx;
+  margin: auto 0;
+  height: 30rpx;
+}
+.connect-server contact-button{
+  font-size: 32rpx;
+  color: #333;
+  
+}

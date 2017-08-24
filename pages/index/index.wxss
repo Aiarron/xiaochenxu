@@ -1,0 +1,146 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+.swiper-container{
+  width: 100%;
+  height: 376rpx;
+}
+.swiper-container swiper-item image{
+  width: 100%;
+  display: block;
+}
+.nav{
+  width: 100%;
+  height: 160rpx;
+  display: flex;
+  border-top: 1px solid #f1f1f1;
+}
+.nav .nav-list{
+  flex: 1;
+  text-align: center;
+  font-size: 24rpx;
+  color: #333;
+  padding: 14rpx 0;
+}
+.nav .nav-list .nav-icon{
+  width: 80rpx;
+  height: 80rpx;
+  margin: 10rpx auto;
+  background-size: 100% !important;
+}
+.nav .nav-list .icon1{
+  background: url(/images/icon/index/allgoods.png) no-repeat center;
+}
+.nav .nav-list .icon2{
+  background: url(/images/icon/index/invited.png) no-repeat center;
+}
+.nav .nav-list .icon3{
+  background: url(/images/icon/index/questions.png) no-repeat center;
+}
+.bg-gray{
+  background-color: #f1f1f1;
+}
+.h20{
+  height: 20rpx;
+  width: 100%;
+}
+.parameters{
+  width: 100%;
+}
+.parame-title{
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #333;
+  background: url(../../images/icon/index/zhuangshi.png) no-repeat center;
+  display: block;
+  width: 100%;
+}
+.shop-items{
+  width: 100%;
+}
+.shop-items .hot-recommend{
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  padding: 20rpx 5%;
+  border-bottom: 1rpx solid #f1f1f1;
+}
+.hot-img{
+  width: 40%;
+  display: block;
+  height: 334rpx;
+  overflow: hidden;
+}
+.hot-img image{
+  width: 100%;
+  height: 334rpx;
+  display: block;
+}
+.hot-content{
+  width: 60%;
+  padding-left: 30rpx;
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+  height: 334rpx;
+}
+.hot-content .hot-content-name{
+  font-size: 28rpx;
+  color: #3b3b3b;
+}
+.hot-content .hot-shop-about{
+  position: absolute;
+  bottom: 0;
+  left: 30rpx;
+  display: block;
+}
+.hot-content .hot-shop-about .hot-shop-pric{
+  font-size: 42rpx;
+  color: #ff671e;
+}
+.hot-content .hot-shop-about .hot-shop-pric text{
+  font-size: 30rpx;
+}
+.hot-content .hot-shop-about .hot-shop-post{
+  font-size: 24rpx;
+  color: #fff;
+  background-color: #ff7b49;
+  padding: 4rpx 10rpx;
+  vertical-align: middle;
+  border-radius: 4rpx;
+  -webkit-border-radius: 4rpx;
+  margin-left: 4rpx;
+}

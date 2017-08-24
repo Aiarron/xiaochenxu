@@ -1,0 +1,27 @@
+/* mes.wxss */
+page{
+  background-color: #f1f1f1;
+}
+.mes-item{
+  padding:30rpx 5%;
+  background-color: #fff;
+  border-bottom: 1px solid #f1f1f1
+}
+.mes-info{
+  display: flex;
+  flex-direction: row;
+}
+.mes-info .mes-info-l{
+  font-size: 30rpx;
+  color: #333;
+}
+.mes-info .mes-info-r{
+  font-size: 22rpx;
+  color: #999;
+}
+.mes-item .mes-about{
+  font-size: 24rpx;
+  color: #666;
+  margin-top: 30rpx;
+  line-height: 40rpx;
+}

@@ -1,0 +1,47 @@
+<!--person.wxml-->
+<view class="container">
+  <block>
+    <view class="about-me">
+      <view class="about-item" bindtap="selectAvatar">
+        <view class="disfix w100 f30">
+          <view class="about-name col-5">头像</view>
+          <view class="about-arrow  col-5 t-r">
+            <view class="user-avatar">
+              <!-- <image src="{{userinfo.head_pic == '' ? '/images/icon/me/defaultavatar.png' : '{{userinfo.head_pic}}'}}{{ userinfo.head_pic }}" ></image> -->
+              <!-- <image src="{{source}}" ></image> -->
+              <image src="{{source}}" ></image>
+            </view> 
+            <icon type="String" class="arricon v-a" />
+          </view>
+        </view>
+      </view>
+      <view class="about-item">
+        <view class="disfix w100 f30">
+          <view class="about-name col-5">昵称</view>
+          <view class="about-arrow  col-5 t-r">
+            xiaochen
+            <icon type="String" class="arricon v-a" />
+          </view>
+        </view>
+      </view>
+      <view class="about-item">
+        <view class="disfix w100 f30">
+          <view class="about-name col-5">性别</view>
+          <view class="about-arrow  col-5 t-r">
+            女
+            <icon type="String" class="arricon v-a" />
+          </view>
+        </view>
+      </view>
+      <view class="about-item">
+        <view class="disfix w100 f30">
+          <view class="about-name col-5">生日</view>
+          <view class="about-arrow  col-5 t-r">
+            0000-00-00
+            <icon type="String" class="arricon v-a" />
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

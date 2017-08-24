@@ -1,0 +1,23 @@
+<!--allorder.wxml-->
+<view class="container">
+  <block>
+    <view class="nav" >
+      <view class="nav-bar on" bindtap="queryMultipleNodes">全部</view>
+      <view class="nav-bar">待接单</view>
+      <view class="nav-bar">待配送</view>
+      <view class="nav-bar">已配送</view>
+      <view class="nav-bar">已完成</view>
+    </view>
+  </block>
+  <block>
+    <!-- 有数据 -->
+    <view class="order"></view>
+    <!-- 无数据 -->
+    <view class="no-data">
+      <view class="no-data-con">
+        <image src="/images/icon/null/blank_noorder.png"></image>
+        <text>暂无订单</text>
+      </view>
+    </view>
+  </block>
+</view>

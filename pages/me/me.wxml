@@ -1,0 +1,143 @@
+<!--me.wxml-->
+<view class="container">
+  <block>
+    <view class="header">
+      <!-- 已登录 -->
+      <view class="header-info" wx:if="{{login}}">
+        <navigator url="/pages/manage/person/person" open-type="navigateTo" class="dis w100">
+          <view class="header-info-box">
+            <image src="/images/icon/me/defaultavatar.png"></image>
+            <view class="header-info-name">
+              {{userinfo.nickname}}
+            </view>
+          </view>
+        </navigator>
+        <view class="header-arrow-icon">
+          <icon type="String" class="arricon icon-white" />
+        </view>
+      </view>
+      <!-- 未登录 -->
+      <view class="header-info" wx:else>
+        <view class="header-info-box">
+          <image src="/images/icon/me/defaultavatar.png"></image>
+          <view class="header-login-btn">
+            <navigator url="../login/login" hover-class="changestyle" open-type="navigateTo">点击登录</navigator>
+          </view>
+        </view>
+        <view class="header-arrow-icon">
+          <icon type="String" class="arricon icon-white" />
+        </view>
+      </view>
+    </view>
+  </block>
+
+  <block>
+    <view class="all-order">
+      <view class="check-order disfix" bindtap="orderOption">
+        <!-- <navigator> -->
+          <view class="check-name">全部订单</view>
+          <view class="check-tick">查看全部订单<icon type="String" class="arricon" /></view>
+        <!-- </navigator> -->
+      </view>
+      <block>
+        <view class="check-item">
+          <view class="check-list">
+            <navigator url="">
+              <icon type="String" class="cicon icon1" />
+              <text>待接单</text>
+            </navigator>
+          </view>
+          <view class="check-list">
+            <navigator url="">
+              <icon type="String" class="cicon icon2" />
+              <text>待配送</text>
+            </navigator>
+          </view>
+          <view class="check-list">
+            <navigator url="">
+              <icon type="String" class="cicon icon3" />
+              <text>已配送</text>
+            </navigator>
+          </view>
+          <view class="check-list">
+            <navigator url="">
+              <icon type="String" class="cicon icon4" />
+              <text>已完成</text>
+            </navigator>
+          </view>
+        </view>
+      </block>
+    </view>
+  </block>
+
+  <block>
+    <view class="about-me">
+      <view class="about-item"  wx:if="{{login}}">
+        <navigator url="/pages/manage/balance/balance" open-type="navigateTo">
+          <view class="about-name col-5">我的余额</view>
+          <view class="about-arrow ft-orange col-5">
+            {{userinfo.total_coin}}
+            <icon type="String" class="arricon v-a" />
+          </view>
+        </navigator>
+      </view>
+      <view class="about-item" wx:else>
+        <navigator url="">
+          <view class="about-name col-9">我的余额</view>
+          <view class="about-arrow col-1">
+            <icon type="String" class="arricon" />
+          </view>
+        </navigator>
+      </view>
+      <view class="about-item">
+        <navigator url="">
+          <view class="about-name col-9">邀请有礼</view>
+          <view class="about-arrow col-1">
+            <icon type="String" class="arricon" />
+          </view>
+        </navigator>
+      </view>
+      <view class="about-item">
+        <navigator url="/pages/manage/address/address" open-type="navigateTo">
+          <view class="about-name col-9">收货地址</view>
+          <view class="about-arrow col-1">
+            <icon type="String" class="arricon" />
+          </view>
+        </navigator>
+      </view>
+      <view class="about-item">
+        <navigator url="">
+          <view class="about-name col-9">常见问题</view>
+          <view class="about-arrow col-1">
+            <icon type="String" class="arricon" />
+          </view>
+        </navigator>
+      </view>
+      <view class="about-item">
+        <navigator url="../manage/decale/decale" hover-class="changestyle" open-type="navigateTo">
+          <view class="about-name col-9">会员须知</view>
+          <view class="about-arrow col-1">
+            <icon type="String" class="arricon" />
+          </view>
+        </navigator>
+      </view>
+      <view class="about-item">
+        <navigator url="">
+          <view class="about-name col-9">意见反馈</view>
+          <view class="about-arrow col-1">
+            <icon type="String" class="arricon" />
+          </view>
+        </navigator>
+      </view>
+      <view class="about-item" wx:if="{{login}}">
+        <navigator url="/pages/manage/setting/setting" open-type="navigateTo">
+          <view class="about-name col-9">设置</view>
+          <view class="about-arrow col-1">
+            <icon type="String" class="arricon" />
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </block>
+
+</view>

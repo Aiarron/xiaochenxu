@@ -1,0 +1,24 @@
+<!--login.wxml-->
+<view class="container">
+  <form bindsubmit="onLogin">
+    <view class="row">
+      <view class="row-name">姓名：</view>
+      <input type="number" name="mobile" placeholder="请输入用户名" />
+    </view>
+    <view class="row">
+      <view class="row-name">密码：</view>
+      <input type="password" name="password" placeholder="请输入密码" />
+    </view>
+    <view class="row no-bd">
+      <button type="primary" form-type="submit">登陆</button>
+    </view>
+  </form>
+  <view class="other-option">
+    <view class="reg">
+      <navigator url="/pages/register/register" open-type="navigateTo">注册</navigator>
+    </view>
+    <view class="forget">
+      <navigator url="" open-type="navigateTo">忘记密码？</navigator>
+    </view>
+  </view>
+</view>

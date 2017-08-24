@@ -1,0 +1,39 @@
+<!--setting.wxml-->
+<view class="container">
+  <block>
+    <view class="setting">
+      <view class="set-item">
+        <view class="set-list">
+          <navigator url="" open-type="navigateTo" class="disfix">
+            <view class="col-9">修改登录密码</view>
+            <view class="col-1 text-r">
+              <icon type="String" class="arricon" />
+            </view>
+          </navigator>
+        </view>
+        <view class="set-list">
+          <navigator url="" open-type="navigateTo" class="disfix">
+            <view class="col-9">关于我们</view>
+            <view class="col-1 text-r">
+              <icon type="String" class="arricon" />
+            </view>
+          </navigator>
+        </view>
+        <view class="set-list">
+          <navigator url="" open-type="navigateTo" class="disfix">
+            <view class="col-9">账户安全</view>
+            <view class="col-1 text-r">
+              <icon type="String" class="arricon" />
+            </view>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </block>
+
+
+  <block>
+    <button type="default" class="exit" bindtap="onExit">退出登录</button>
+  </block>
+
+</view>

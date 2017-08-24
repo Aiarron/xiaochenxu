@@ -1,0 +1,2 @@
+/* register.wxss */
+@import '../login/login.wxss';

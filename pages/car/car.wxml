@@ -1,0 +1,7 @@
+<view class="container">
+  <!-- 联系客服 -->
+  <view class="connect-server">
+    <contact-button type="default-light" SessionFrom="weapp" open-type="contact">联系客服</contact-button>
+  </view>
+
+</view>

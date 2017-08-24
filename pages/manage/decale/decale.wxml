@@ -1,0 +1,10 @@
+<!--decale.wxml-->
+<import src="../../../wxParse/wxParse.wxml"/>  
+
+<view class="wxParse">
+    <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+</view>
+
+<view class="wxParsewe">
+    <template is="wxParse" data="{{wxParseData:result.nodes}}"/>
+</view>

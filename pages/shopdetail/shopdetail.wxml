@@ -1,0 +1,102 @@
+<view class="shop">
+  <view class="shop-top">
+    <swiper class="swiper-detail">
+      <block wx:for="{{shop.goods.images}}" wx:key="{{ index }}">
+        <swiper-item class="img-item" bindchange="durationChange">
+          <image src="{{item.image_url}}"/> 
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="shop-pagination ">
+      <text class="img-curr">{{ cur+1 }}</text>/<text>{{shop.goods.images.length}}</text>
+    </view>
+  </view>
+  <view class="shop-detail">
+    <text class="shop-detail-name">{{shop.goods.goods_name}}</text>
+    <text class="remarks">{{shop.goods.goods_remark}}</text>
+    <view class="money">￥<text class="int">{{shop.goods.give_coin}}</text><text class="decimal">.00</text></view>
+
+    <view class="shop-output-to">
+      <view class="postage" wx:if="{{shop.goods.postage == 0}}">包邮</view>
+      <view class="postage" wx:if="{{shop.goods.postage != 0}}">邮费：{{shop.goods.postage}}</view>
+      <view class="sell">销量：{{shop.goods.sales_num}}</view>
+      <view class="address">{{shop.goods.address}}</view>
+    </view>
+  </view>
+
+  <view class="bg-gray h20"></view>
+  <view class="shop-option">
+    <view class="service-description bt" bindtap="serverModal">
+      <view class="col-9">服务说明</view>
+      <view class="arrow col-1"><icon type="String" /></view>
+    </view>
+    <view class="choose-role" bindtap="changeModal">
+      <view class="col-2">已选</view>
+      <view class="col-7 box-s ft-black result-select">22222,222,222222,22222,222222,2222,322</view>
+      <view class="col-1 arrow"><icon type="String" /></view>
+    </view>
+  </view>
+  
+  <view class="pull-up">
+    <icon type="String" class="arrow-up" />
+    <text>点击查看图文详情</text>
+  </view>  
+</view>
+
+<view class="server-model {{show == true ? '':'hide'}}">
+  <view class="server-model-cont">
+    <view class="picker-modal-inner">
+      <view class="picker-modal-top">服务说明</view>
+      <view class="picker-modal-cen">
+        {{shop.goods.service_note}}
+      </view>
+      <view class="picker-modal-bot" bindtap="serverModal">完成</view>
+    </view>
+  </view>
+</view>
+
+<view class="change-buy {{show == true ? '':'hide'}}">
+  <view class="change-buy-con">
+      <view class="change-shopping-top">
+         <image src="{{shop.goods.images[0].image_url}}"></image>
+         <view class="change-info">
+          <text class="change-info-price">￥<text>{{shop.goods.shop_price}}</text></text>
+          <text class="change-info-no">商品编号：{{shop.goods.goods_sn}}</text>
+          <text class="change-info-count">库存：{{shop.goods.spec_goods_price[0].store_count}}</text>
+         </view>
+      </view>
+      <view class="change-shopping-con">
+        <block wx:for="{{shop.goods.filter_spec}}" wx:key="{{index}}">
+          <view class="change-shopping-item">
+              <text class="item-name">{{item.spec_name}}</text>
+              <block>
+                <view class="item-about-list" >
+                  <view wx:for="{{item.spec_item}}" wx:for-index="idx" wx:for-item="list" wx:key="{{idx}}" id="{{list.item_id}}">{{list.item}}</view>
+                </view>
+              </block>
+          </view>
+        </block>
+      </view>
+      <view class="change-shop-btn">
+        <view class="change-shop-op-btn">
+          <view class="addcar" id="addcar">加入购物车</view>
+          <view class="buy" id="buy">立即购买</view>
+        </view>
+      </view>
+  </view>
+</view>
+<!-- 图文详情 -->
+<view class="graphic hide">
+  <view class="graphic-cont">
+    <block>
+      <view class="graphic-nav">
+        <view>图文详情</view>
+        <view>商品规格</view>
+      </view>
+    </block>
+    <block id="0">
+    </block>
+    <block id="1"></block>
+  </view>
+  <view class="graphic-tabbar"></view>
+</view>

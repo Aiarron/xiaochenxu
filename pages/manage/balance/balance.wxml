@@ -1,0 +1,44 @@
+<!--balance.wxml-->
+<view class="container">
+  <block>
+    <view class="balance-top">
+      <text class="all_coin">{{userinfo.total_coin}}</text>
+    </view>
+  </block>
+  <block>
+    <view class="withdraw">
+      <view class="withdraw-btn">提现</view>
+    </view>
+  </block>
+  <view class="balance-title">余额明细记录</view>
+  <block wx:if="{{data.length > 0}}">
+    <view class="balance">
+      <view class="balance-item" wx:for="{{data}}" id="{{data.id}}">
+        <view class="balance-item-l col-8">
+          <view class="item-name">{{item.desc}}</view>
+          <view class="item-time">{{item.ctime}}</view>
+        </view>
+        <view class="balance-item-r col-2">
+          <block>
+            <view class="item-status" wx:if="{{item.status == '0'}}">提现中</view>
+            <view class="item-status" wx:elif="{{item.status == '1'}}">提现成功</view>
+            <view class="item-status" wx:else="{{item.status == '1'}}">提现失败</view>
+          </block>
+          <block>
+            <view class="item-num ft-red" wx:if="{{item.status == '0'}}">-{{item.amount}}</view>
+            <view class="item-num ft-yes" wx:elif="{{item.status == '1'}}">-{{item.amount}}</view>
+            <view class="item-num ft-red ft-line" wx:else="{{item.status == '1'}}">-{{item.amount}}</view>
+          </block>
+        </view>
+      </view>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="no-balance">
+      <image src="/images/icon/null/blank_nodetailedrecord.png"></image>
+      <text>暂无明细</text>
+    </view>
+  </block>
+  <block></block>
+  <block></block>
+</view>

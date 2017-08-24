@@ -1,0 +1,66 @@
+/* login.wxss */
+.row{
+  width: 90%;
+  margin:0 auto;
+  padding: 58rpx 0 30rpx 0;
+  /* margin-top:58rpx; */
+  font-family: "Microsoft YaHei";
+  border-bottom: 1px solid #f1f1f1;
+}
+.no-bd{
+  border-bottom: none;
+}
+form{
+  width: 100%;
+}
+.row .row-name{
+  display: block;
+  font-size: 30rpx;
+  color: #333;
+  font-weight: bold;
+  width: 100%;
+  font-family: "Microsoft YaHei";
+}
+.row input{
+  font-size: 26rpx;
+  color: #333;
+  display: block;
+  width: 100%;
+  margin-top: 10rpx;
+}
+.row button{
+  padding: 0 2rem;
+  width: 100%;
+}
+.other-option{
+  display: flex;
+  display: -webkit-flex;
+  width: 90%;
+  padding: 0 5%;
+  margin-top: 20rpx;
+}
+.other-option .reg,.other-option .forget,.other-option .login{
+  flex: 1;
+  font-size: 28rpx;
+  color: #333;
+}
+.other-option .forget,.other-option .login {
+  text-align: right;
+}
+.row .row-code{
+  display: inline-block;
+  width: 60%;
+}
+.row .getcode{
+  display: inline-block;
+  width: 160rpx;
+  height: 60rpx;
+  color:#333;
+  padding:0;
+  font-size:26rpx;
+
+}
+.row .getcode.on{
+  background-color: #ff671e;
+  color: #fff;
+}

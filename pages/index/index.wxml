@@ -1,0 +1,59 @@
+<!--index.wxml-->
+<view class="container" id="container">
+  <!-- <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view> -->
+  <swiper class="swiper-container" autoplay="true" interval="5000" duration="1000" indicator-dots="true" indicator-color="#fff" indicator-active-color="#f00">
+    <block wx:for="{{itenImg}}" wx:key="{{ index }}">
+      <swiper-item>
+         <image src="{{item.src}}" class="slide-image" width="100%" height="150"/> 
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <block>
+    <view class="nav">
+      <view class="nav-list">
+        <view class="nav-icon icon1"></view>
+        全部商品
+      </view>
+      <view class="nav-list">
+        <view class="nav-icon icon2"></view>
+        邀请有礼
+      </view>
+      <view class="nav-list">
+        <view class="nav-icon icon3"></view>
+        常见问题
+      </view>
+    </view>
+  </block>
+  <view class="h20 bg-gray"></view>
+  <!-- 商品推荐 -->
+  <block>
+    <view class="parameters">
+      <view class="parame-title">商品推荐</view>
+      <block wx:for="{{result}}" wx:key="{{index}}" >
+        <navigator url="../shopdetail/shopdetail?goods_id={{item.goods_id}}" hover-class="changestyle" open-type="navigateTo">
+          <view class="shop-items" id="{{item.goods_id}}">
+            <view class="hot-recommend">
+              <view class="hot-img">
+                <image src="{{item.original_img}}"></image>
+              </view>
+              <view class="hot-content">
+                <text class="hot-content-name">{{ item.goods_name }}</text>
+                <view class="hot-shop-about">
+                  <text class="hot-shop-pric"><text class="">￥</text>{{item.shop_price}}</text>
+                  <block wx:for="{{item.goods_label}}" wx:for-index="idx" wx:for-item="label" wx:key="{{idx}}">
+                  <text class="hot-shop-post">{{label}}</text>
+                  </block>
+                </view>
+              </view>
+            </view>
+          </view>
+        </navigator>
+      </block>
+    </view>
+  </block>
+
+</view>

@@ -1,0 +1,25 @@
+<!--mes.wxml-->
+<view class="container">
+  <!-- 无数据 -->
+  <block wx:if="{{data.length == '0'}}">
+    <view class="no-data">
+      <view class="no-data-con">
+        <image src="/images/icon/null/blank_nomessage.png"></image>
+        <text>暂无消息</text>
+      </view>
+    </view>
+  </block>
+  <!-- 有数据 -->
+  <block wx:else>
+    <view class="message">
+      <view class="mes-item" wx:for="{{data}}">
+        <view class="mes-info">
+          <view class="mes-info-l col-8 spil">{{item.title}}</view>
+          <view class="mes-info-r col-2">{{item.ctime}}</view>
+        </view>
+        <view class="mes-about">{{item.content}}{{item.type}}{{item.system_message_id}}{{item.href}}</view>
+      </view>
+    </view>
+  </block>
+  
+</view>

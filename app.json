@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/car/car",
+    "pages/mes/mes",
+    "pages/me/me",
+    "pages/shopdetail/shopdetail",
+    "pages/manage/decale/decale",
+    "pages/login/login",
+    "pages/manage/setting/setting",
+    "pages/manage/allorder/allorder",
+    "pages/register/register",
+    "pages/manage/balance/balance",
+    "pages/manage/person/person",
+    "pages/manage/address/address"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "红鸟电商",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#ff671e",
+    "backgroundColor": "#fff",
+    "borderStyle": "#f00",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icon/home_nor.png",
+        "selectedIconPath": "images/icon/home_sel.png"
+      },
+      {
+        "pagePath": "pages/car/car",
+        "text": "购物车",
+        "iconPath": "images/icon/shoppingcart_nor.png",
+        "selectedIconPath": "images/icon/shoppingcart_sel.png"
+      },
+      {
+        "pagePath": "pages/mes/mes",
+        "text": "消息",
+        "iconPath": "images/icon/message_nor.png",
+        "selectedIconPath": "images/icon/message_sel.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "images/icon/my_nor.png",
+        "selectedIconPath": "images/icon/my_sel.png"
+      }
+    ]
+  }
+}

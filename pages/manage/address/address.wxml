@@ -1,0 +1,13 @@
+<!--address.wxml-->
+<view class="container">
+  <block wx:if="{{ show }}">
+    <view class="classname">
+      地图选择的地方：
+      <view class="">位置名称：{{ map.name }}</view>
+      <view class="">详细地址：{{ map.address }}</view>
+      <view class="">维度：{{ map.latitude }}</view>
+      <view class="">经度：{{ map.longitude }}</view>
+    </view>
+  </block>
+
+</view>

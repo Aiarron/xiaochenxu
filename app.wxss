@@ -1,0 +1,139 @@
+/**app.wxss**/
+view,template{
+  margin: 0;
+  padding: 0;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  font-family: "Microsoft YaHei";
+} 
+.col-9{
+  width: 90%;
+}
+.col-8{
+  width: 80%;
+}
+.col-7{
+  width: 70%;
+}
+.col-6{
+  width: 60%;
+}
+.col-5{
+  width: 50%;
+}
+.col-4{
+  width: 40%;
+}
+.col-3{
+  width: 30%;
+}
+.col-2{
+  width: 20%;
+}
+.col-1{
+  width: 10%;
+}
+.v-a{
+  vertical-align: middle;
+}
+.arricon{
+  width: 30rpx;
+  height: 30rpx;
+  background: url(/images/icon/me/next.png) no-repeat;
+  background-size: cover;
+}
+.icon-white{
+  background: url(/images/icon/me/next_white.png) no-repeat;
+  background-size: cover;
+}
+.disfix{
+  display: flex;
+  display: -webkit-flex;
+}
+.text-r{
+  text-align: right;
+}
+.text-c{
+  text-align: center;
+}
+.text-l{
+  text-align: left;
+}
+.no-data{
+  width: 100%;
+  padding: 200rpx 0;
+}
+.no-data .no-data-con{
+  margin: 0 auto;
+  text-align: center;
+}
+.no-data .no-data-con image{
+  width: 320rpx;
+  height: 320rpx;
+  display: block;
+  margin: 0 auto;
+}
+.no-data .no-data-con text{
+  font-size: 28rpx;
+  color: #999;
+  margin-top: 10rpx;
+  text-align: center;
+}
+.hide{
+  display: none;
+}
+.mt50{
+  margin-top: 50rpx;
+}
+.dis{
+  display: block;
+}
+.w100{
+  width: 100%;
+}
+.about-me {
+   width:100%;
+   margin-top:20rpx;
+   background:#fff;
+}
+
+.about-item{
+  width: 90%;
+  padding: 0 5%;
+  background: #fff;
+  border-bottom: 1rpx solid #f1f1f1;
+  height: 100rpx;
+}
+.about-item navigator{
+  width: 100%;
+  line-height: 100rpx;
+  display: flex;
+  display: -webkit-flex;
+}
+.about-item navigator .about-name,.f30{
+  font-size: 30rpx;
+  color: #333;
+}
+.about-item navigator .about-arrow{
+  text-align: right;
+}
+.about-item navigator .ft-orange{
+  color: #ff671e;
+  font-size: 24rpx;
+  vertical-align: middle;
+}
+.user-avatar{
+  width: 80rpx;height: 80rpx;border-radius: 50%;-webkit-border-radius: 50%;display: inline-block;vertical-align: middle;
+}
+.user-avatar image{
+  width: 100%;height: 100%;border-radius: 50%;-webkit-border-radius: 50%;
+}
+.t-r{
+  text-align: right;
+}
